@@ -1,4 +1,13 @@
-egl-external-website
+EGL External Website
 ====================
 
-External website for EGL
+External website for EGL.
+
+Primary Audience
+------------------
+
+
+Desired Features
+-------------------
+
+
