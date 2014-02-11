@@ -113,8 +113,11 @@
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script>
-		$("#header").load("includes/header.html");
+		$("#header").load("includes/header.html", function() {
+			$("#nav_home").addClass("active");
+		});
 		$("#footer").load("includes/footer.html");
+		
 	</script>
   </body>
 </html>
