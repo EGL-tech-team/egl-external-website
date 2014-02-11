@@ -95,7 +95,13 @@ a:after {
 }
 
 .navbar-inverse .navbar-nav > .active > a {
-	background: #ff7878
+	background: #FFF209;
+    color: #999999;
+}
+
+.navbar-inverse .navbar-nav > .active > a:hover {
+    background: #5749FF;
+    color: #FFFFFF;
 }
 
 .navbar-inverse .navbar-brand {
@@ -196,7 +202,7 @@ a:after {
 
 /* Red Wrap */
 #r {
-	background: #ff7878;
+	background: #5749FF;
 	padding-top: 35px;
 	padding-bottom: 35px;
 }
@@ -257,7 +263,7 @@ a:after {
 }
 
 .w i {
-	color: #ff7878;
+	color: #5749FF;
 	font-size: 30px;
 }
 
