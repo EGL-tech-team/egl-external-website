@@ -134,6 +134,23 @@ a:after {
           transform: rotate(-10deg);
 }
 
+/*BW*/
+.bw {
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+
+.bw:hover {
+  -webkit-filter: grayscale(100%);
+   -moz-filter: grayscale(100%);
+     -o-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+        filter: grayscale(100%);
+}
+
 /* ==========================================================================
    Wrap Sections
    ========================================================================== */
