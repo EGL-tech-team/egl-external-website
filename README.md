@@ -1,23 +1,30 @@
 EGL External Website
 ====================
 
-External website for EGL.
+External website for EGL. (Mission statement, value propositions (tenants), measurements of success)
 
-Primary Audience
+
+Scope
 ------------------
+What are we working on? What are we not working on?
 
 
-Expected Use Cases
+Milestones
 -------------------
+Major milestones and expected completion dates (concrete, measureable).
 
 
-###Prospective Student
+Stakeholder (User?) Stories
+---------------------
+How are all of the involved parties benefited? Previous state (what did they do before this website?) and future state (what will they do now that the website exisits?).
+
+###Prospective EGL Student
+
+###Prospective University student
 
 ###Interested Company
 
 ###Alumni
 
-Desired Features
--------------------
-
+###Current EGL Student
 
