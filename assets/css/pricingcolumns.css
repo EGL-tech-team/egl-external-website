@@ -1,0 +1,187 @@
+/* -------- PRICING COLUMNS -----*/
+
+.plans.row-fluid {
+	padding: 2% 0 4%;
+}
+.plans .plan {
+	float: left;
+	padding: 20px 0 15px;
+	text-align: center;
+	position:relative;
+}
+
+.plans.threeCol .plan {
+	width: 31.5%;
+	*width:31%;
+}
+.plans.threeCol .plan.plan-featured {
+	width: 35%;
+	*width:34.5%;
+}
+
+.plans.fourCol .plan {
+	width: 21%;
+	*width:20.5%;
+	border-left: 1px solid #c8d7e3;
+}
+
+.plans.fourCol .plan.plan-featured {
+	width: 35%;
+	*width:35%;
+	border-left: 1px solid #c8d7e3;
+}
+
+.plans.fourCol .plan.first, 
+.plans.fourCol .plan.last {
+	border-left: 0px;
+}
+.plan h3 {
+	position: relative;
+	line-height: 1;
+	white-space: nowrap;
+}
+.plan h3 small {
+	color: inherit;
+	text-transform: uppercase;
+	line-height: inherit;
+	position: relative;
+	top: -5px;
+	font-size:50%;
+	padding:0 0 5px 0;
+	margin-bottom:-3px;
+	display:inline-block;
+	*zoom:1;
+	*display:inline;
+	border-bottom: 1px solid #4C5966;
+	-webkit-transform: rotate(-90deg);
+	-moz-transform:    rotate(-90deg);
+	-ms-transform:     rotate(-90deg);
+	-o-transform:      rotate(-90deg);
+}
+
+.plan .price {
+	margin: 0 auto 20px;
+	width: 90px;
+	height: 90px;
+	line-height: 90px;
+	font-size: 120%;
+	font-weight: bold;
+	color: white;
+	background: #4C5966;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+}
+.plan .price > span {
+	font-size: 70%;
+	font-weight: normal;
+}
+.plan ul {
+	margin: 0 0 20px;
+	line-height: 2;
+	list-style: none;
+	text-align: center;
+}
+.plan ul > li > strong {
+	font-weight: bold;
+}
+
+.plan-featured {
+	border: 1px solid #c8d7e3;
+	border-top: 0px;
+	border-bottom: 0px;
+} 
+.plan.plan-featured > .price {
+	width: 120px;
+	height: 120px;
+	line-height: 120px;
+	font-size: 150%;
+	background: #53A3B7;
+}
+.plan.plan-featured > ul {
+	font-size: 120%;
+}
+.plan.plan-featured h3 {
+	padding-right:50px; /*so the ribbon doesn't cover it up*/
+	padding-left:50px; /* so it looks centered*/
+}
+
+/* PLAN MORE INFO */
+.plan li.show-details { 
+	cursor:pointer
+}
+.plan li.show-details.active i, .plan li.show-details:hover i { 
+	color:#53A3B7;
+}
+.plan li.show-details .option-details { 
+	padding:10px;
+	margin:0;
+	text-align:left;
+	background:#f7f7f7;
+	font-size:90%;
+	font-weight:400;
+}
+
+/* ---------------------PRICING COLUMN Ribbon---------------------*/
+
+.ribbon-wrapper {
+	width: 135px;
+	height: 135px;
+	overflow: hidden;
+	position: absolute;
+	top: -1px;
+	right: -1px;
+}
+
+.ribbon {
+	text-align: center;
+	color:#fff;
+	font-weight:600;
+	font-size:12px;
+	-webkit-transform: rotate(45deg);
+	-moz-transform:    rotate(45deg);
+	-ms-transform:     rotate(45deg);
+	-o-transform:      rotate(45deg);
+	position: relative;
+	padding: 5px 0;
+	top: 20px;
+	width:200px;
+	background: #53A3B7;
+}
+/*fall back*/
+.no-csstransforms .ribbon-wrapper {
+	position: relative;
+	height: auto;
+	width: auto;
+	top: auto;
+	right: auto;
+	overflow: visible;
+	margin-bottom:15px;
+}
+.no-csstransforms .ribbon {
+	top: auto;
+}
+.no-csstransforms .plan.plan-featured h3 {
+	clear:both;
+}
+
+
+
+
+
+
+@media only screen and (max-width:767px) {
+
+	/*------------ PRICING PLAN MOBILE -------------*/
+	.plans.threeCol .plan, .plans.fourCol .plan, .plans.fourCol .plan.plan-featured, .plans.threeCol .plan.plan-featured {
+		width: 100%;
+		float:none;
+		clear:both;
+		border:0px;
+		border-bottom: 1px solid #c8d7e3;
+	}
+	
+
+}
+
+

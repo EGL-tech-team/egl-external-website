@@ -1,0 +1,1 @@
+Fancybox original files are in the fancybox folder inside the assets/js folder

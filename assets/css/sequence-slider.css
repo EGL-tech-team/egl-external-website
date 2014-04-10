@@ -1,0 +1,629 @@
+/*
+Theme created for use with Sequence.js VERSION 1.0 (http://www.sequencejs.com/)
+Theme: Classic for the Crisp Bootstrap Theme
+Version: 1.0
+Theme Author: Christina Arasmo @dropsoul
+
+Sequence.js and its dependencies are (c) Ian Lunn Design 2012 unless otherwise stated.
+MIT License for Sequence.js
+Copyright (c) 2012 Ian Lunn Design
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the â€œSoftwareâ€), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+*/
+
+/*------------ base background css for slides ------------ */
+.slide1 .bgimg, .slide2 .bgimg, .slide3 .bgimg, .slide4 .bgimg {
+	    background-repeat: repeat-x;
+	    background-position: 50% 0%;
+}
+
+/*---------------------------------------------------------------- 
+BACKGROUND IMAGES USE MOBILE FIRST AND THEN A FALL BACK FOR OLDER IE - smaller image for the small device. 
+ ---------------------------------------------------------------- */
+
+/*------------ media query for devices from 981px and up (Large screens) ------------ */
+@media only screen and (min-width:981px) { 
+	.slide1 .bgimg {background-image: url(../sequence/sequence-1-lg.jpg);}
+	.slide2 .bgimg {background-image: url(../sequence/sequence-2-lg.jpg);}
+	.slide3 .bgimg {background-image: url(../sequence/sequence-1-lg.jpg);}
+	.slide4 .bgimg {background-image: url(../sequence/sequence-2-lg.jpg);}
+
+}
+
+/*------------ media query Medium devices from 501px to 980px ------------ */
+@media only screen and (min-width:481px) and (max-width:980px) { 
+	.slide1 .bgimg {background-image: url(../sequence/sequence-1-md.jpg);}
+	.slide2 .bgimg {background-image: url(../sequence/sequence-2-md.jpg);}
+	.slide3 .bgimg {background-image: url(../sequence/sequence-1-md.jpg);}
+	.slide4 .bgimg {background-image: url(../sequence/sequence-2-md.jpg);}
+}
+
+/*------------ media query for Small Screens 500px and down ------------ */
+@media only screen and (max-width: 480px) { 
+	.slide1 .bgimg {background-image: url(../sequence/sequence-1-sm.jpg);}
+	.slide2 .bgimg {background-image: url(../sequence/sequence-2-sm.jpg);}
+	.slide3 .bgimg {background-image: url(../sequence/sequence-1-sm.jpg);}
+	.slide4 .bgimg {background-image: url(../sequence/sequence-2-sm.jpg);}
+}
+
+
+/*------------ THESE are outside a media query for Background Images IE ONLY LEGACY BROWSERS ------------ */
+.lt-ie9 .slide1 .bgimg {background-image: url(../sequence/sequence-1-lg.jpg);}
+.lt-ie9 .slide2 .bgimg {background-image: url(../sequence/sequence-2-lg.jpg);}
+.lt-ie9 .slide3 .bgimg {background-image: url(../sequence/sequence-1-lg.jpg);}
+.lt-ie9 .slide4 .bgimg {background-image: url(../sequence/sequence-2-lg.jpg);}
+
+/*------------ end IE background images ------------ */
+
+
+/* _____ assumes all dark backgrounds, adjust css to accomodate your needs */
+
+#sequence > .sequence-canvas {
+  height: 100%;
+  width: 100%;
+}
+#sequence > .sequence-canvas > li {
+  position: absolute;
+  width: 100%;
+  height:100%;
+  z-index: 1;
+  top: 0;
+}
+#sequence > .sequence-canvas li > * {
+  position: absolute;
+}
+
+#sequence {height:400px;}
+
+/*------------ Container(s) ------------ */
+.sequence-theme ul,
+.sequence-theme ul li {
+    margin: 0;
+    padding: 0;
+}
+.sequence-theme ul li { list-style: none }
+.sequence-theme {
+    width: 100%;
+    overflow:hidden;
+    position: relative;
+    -webkit-backface-visibility: hidden;
+    margin: -2% 0 0 0;
+}
+
+.sequence-theme #sequence.sequence-fallback { overflow: hidden }
+
+/*------------ Navigation ------------ */
+
+.sequence-theme .sequence-next,
+.sequence-theme .sequence-prev {
+    cursor: pointer;
+    top: 50%;
+    margin-top: -30px;
+    opacity: 0;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    transition: all 1s ease;
+    position: absolute;
+    z-index: 200;
+    right: -50px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+    font-size: 30px;
+    line-height: 50px;
+    color: #fff;
+    background: #53A3B7;
+    text-align: center;
+}
+.sequence-theme .sequence-prev {
+    left: -50px;
+    right: auto;
+}
+.sequence-theme .sequence-next:hover,
+.sequence-theme .sequence-prev:hover { opacity: .5 }
+.sequence-theme:hover .sequence-next {
+    opacity: 1;
+    right: 0;
+}
+.sequence-theme:hover .sequence-prev {
+    opacity: 1;
+    left: 0;
+}
+.sequence-theme .sequence-prev i {
+    position: relative;
+    left: 2px;
+    *top:10px;
+}
+.sequence-theme .sequence-next i {
+    position: relative;
+    left: -2px;
+	*top:10px;
+}
+
+/*------------ Control Dots ------------ */
+.sequence-pagination {
+    margin: 0 0 40px 0;
+    padding: 0;
+    position: relative;
+    clear:both;
+    z-index: 8;
+    width: 100%;
+    text-align: center;
+}
+.sequence-pagination li {
+    margin: 10px 2px 5px 2px;
+    padding: 0;
+    line-height: 1;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+}
+.sequence-pagination li a {
+    width: 10px;
+    height: 10px;
+    display: block;
+    background:#EAEEF2;
+    cursor: pointer;
+    text-indent: 9999px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+.sequence-pagination li a:hover { background: #000 }
+.sequence-pagination li.current a {
+    background: #53A3B7;
+    cursor: default;
+}
+.lt-ie8 .sequence-pagination {
+	position: relative;
+	overflow:visible;
+	background:#fff;
+}
+
+/*------------ Base Slide Styles ------------ */
+.slide-image img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    max-height: 350px;
+}
+.sequence-theme .bgimg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 600px;
+    opacity: 0;
+    width: 100%;
+}
+
+
+/*------------ caption ------------ */
+
+.sequence-theme .caption {
+    z-index: 2;
+}
+.sequence-theme .caption h2 {
+	font-size:300%;
+	color: #fff;
+	margin:0;
+}
+.sequence-theme .caption h3 {
+	font-size:200%;
+	line-height:1.4;
+	color: #fff;
+	margin:0;
+}
+
+.sequence-theme .caption h2 span {
+	-moz-box-shadow:  0px 0px 0px 8px #53A3B7;
+	-webkit-box-shadow:  0px 0px 0px 8px #53A3B7;
+	box-shadow:  0px 0px 0px 8px #53A3B7;
+	background:#53A3B7;
+	line-height:1.7;
+}
+
+.sequence-theme .caption h3 span {
+	-moz-box-shadow:  0px 0px 0px 8px rgba(76, 89, 102, .5);
+	-webkit-box-shadow:  0px 0px 0px 8px rgba(76, 89, 102, .5);
+	box-shadow:  0px 0px 0px 8px rgba(76, 89, 102, .5);
+	background:rgba(76, 89, 102, .5);
+	line-height:2;
+}
+
+.lt-ie9 .sequence-theme .caption h3 span {
+	background:#4C5966;
+}
+
+.lt-ie9 .sequence-theme .caption h2 {
+	font-size:280%;
+}
+
+.lt-ie9 .sequence-theme .caption h3 {
+	font-size:180%;
+}
+
+/*------------ Background Image Animation ------------ */
+.sequence-theme .animate-in .bgimg {
+    opacity: 1;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -ms-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+}
+.sequence-theme .animate-out .bgimg {
+    opacity: 1;
+    -webkit-transition-duration: 2s;
+    -moz-transition-duration: 2s;
+    -ms-transition-duration: 2s;
+    -o-transition-duration: 2s;
+    transition-duration: 2s;
+}
+/* ----------- TITLE on left - left to right animation ------------*/
+.sequence-theme .title-left-to-right-animate {
+    position: absolute;
+    left: -100%;
+    opacity: 0;
+    top: 65px;
+    width: 35%;
+    max-width:630px;
+}
+.sequence-theme .animate-in .title-left-to-right-animate {
+    left: 10%;
+    opacity: 1;
+    -webkit-transition-delay: 1s;
+    -moz-transition-delay: 1s;
+    -ms-transition-delay: 1s;
+    -o-transition-delay: 1s;
+    transition-delay: 1s;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -ms-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+}
+.sequence-theme .animate-out .title-left-to-right-animate {
+    left: 200%;
+    opacity: 0;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -ms-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+}
+/* ----------- TITLE on right - right to left animation  ------------*/
+.sequence-theme .title-right-to-left-animate {
+    right: -100%;
+    position: absolute;
+    top: 100px;
+    width: 35%;
+	max-width:630px;
+}
+.sequence-theme .animate-in .title-right-to-left-animate {
+    right: 10%;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -ms-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+}
+.sequence-theme .animate-out .title-right-to-left-animate {
+    right: -100%;
+    opacity: 0;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -ms-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+}
+/* -----------  IMAGE on LEFT from bottom out to the left   ------------*/
+.sequence-theme .left-img-from-bottom-out-to-left {
+    left: 5%;
+    width: 35%;
+    position: absolute;
+    top: 800px;
+    z-index: 5;
+}
+.sequence-theme .animate-in .left-img-from-bottom-out-to-left {
+    left: 5%;
+    top: 25px;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -ms-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+}
+.sequence-theme .animate-out .left-img-from-bottom-out-to-left {
+    left: -100%;
+    opacity: 0;
+    top: 25px;
+    -webkit-transition-duration: 2s;
+    -moz-transition-duration: 2s;
+    -ms-transition-duration: 2s;
+    -o-transition-duration: 2s;
+    transition-duration: 2s;
+}
+/* ----------- IMAGE on RIGHT from bottom out to the right  ------------*/
+.sequence-theme .right-img-from-bottom-out-to-right {
+    right: 5%;
+    width: 40%;
+    position: absolute;
+    top: 800px;
+    z-index: 5;
+}
+.sequence-theme .animate-in .right-img-from-bottom-out-to-right {
+    right: 5%;
+    top: 25px;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -ms-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+}
+.sequence-theme .animate-out .right-img-from-bottom-out-to-right {
+    right: -100%;
+    opacity: 0;
+    top: 25px;
+    -webkit-transition-duration: 2s;
+    -moz-transition-duration: 2s;
+    -ms-transition-duration: 2s;
+    -o-transition-duration: 2s;
+    transition-duration: 2s;
+}
+/* -----------  IMAGE on RIGHT from top out to the right  ------------*/
+.sequence-theme .right-img-from-top-out-to-right {
+    right: 0;
+    position: absolute;
+    width: 45%;
+    top: -800px;
+    z-index: 3;
+}
+.sequence-theme .animate-in .right-img-from-top-out-to-right {
+    right: 0;
+    top: 25px;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -ms-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+}
+.sequence-theme .animate-out .right-img-from-top-out-to-right {
+    right: 0;
+    top: -800px;
+    -webkit-transition-duration: 2s;
+    -moz-transition-duration: 2s;
+    -ms-transition-duration: 2s;
+    -o-transition-duration: 2s;
+    transition-duration: 2s;
+}
+/* Title from top center */
+.sequence-theme .title-from-top-animate {
+    left: 0;
+    position: absolute;
+    width: 100%;
+    top: -800px;
+    text-align: center;
+    z-index: 3;
+}
+.sequence-theme .animate-in .title-from-top-animate {
+    left: 0;
+    top: 25px;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -ms-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+}
+.sequence-theme .animate-out .title-from-top-animate {
+    left: 0;
+    top: -800px;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -ms-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+}
+/* IMAGE from bottom center */
+.sequence-theme .img-from-bottom {
+    left: 0;
+    width: 100%;
+    position: absolute;
+    bottom: -800px;
+    z-index: 5;
+}
+.sequence-theme .animate-in .img-from-bottom {
+    left: 0;
+    bottom: -100px;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -ms-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+}
+.sequence-theme .animate-out .img-from-bottom {
+    left: 0;
+    opacity: 0;
+    bottom: 50px;
+    -webkit-transition-duration: 2s;
+    -moz-transition-duration: 2s;
+    -ms-transition-duration: 2s;
+    -o-transition-duration: 2s;
+    transition-duration: 2s;
+}
+/*------------------- LARGE Screens ------------------- */
+@media only screen and (min-width: 1900px) { 
+	.sequence-theme .bgimg { background-size: 100% }
+}
+
+@media only screen and (max-width: 1300px) { 
+	.sequence-theme .caption h2 { font-size: 220%;line-height:1.8}
+	.sequence-theme .caption h3 { font-size: 180% }
+	#sequence {
+		height: 370px;
+	}
+ 
+}
+
+@media only screen and (max-width: 1000px) { 
+	#sequence {
+		height: 320px;
+	}
+	
+	.sequence-theme .caption h2 { font-size: 200% }
+	.sequence-theme .caption h3 { font-size: 150% }
+	.slide-image img { max-height: 300px }
+	.sequence-theme .title-left-to-right-animate { top: 50px }
+	.sequence-theme .title-right-to-left-animate { top: 50px }
+	.sequence-theme .animate-in .left-img-from-bottom-out-to-left,
+	.sequence-theme .animate-out .left-img-from-bottom-out-to-left { top: 25px }
+	.sequence-theme .animate-in .right-img-from-top-out-to-right { top: 25px }
+	.sequence-theme .animate-in .right-img-from-bottom-out-to-right,
+	.sequence-theme .animate-out .right-img-from-bottom-out-to-right { top: 25px }
+	.sequence-theme .animate-in .title-from-top-animate { top: 50px }
+}
+/*---------------------------------------*/
+@media only screen and (max-width: 850px) { 
+
+	.sequence-theme .title-left-to-right-animate {
+  	  max-width:none;
+	}
+	.sequence-theme .title-right-to-left-animate {
+		max-width:none;
+	}
+
+	.sequence-theme .caption {
+	    text-align: center;
+	    margin: 0;
+	}
+	.sequence-theme .caption br {
+    display:none;
+	}
+	.sequence-theme .caption h2 { padding: 0 3% }
+	.sequence-theme .title-left-to-right-animate {
+	    left: -100%;
+	    top: 20px;
+	    width: 100%;
+	}
+	.slide-image img { max-height: 200px }
+	.sequence-theme .animate-in .title-left-to-right-animate { left: 0% }
+	.sequence-theme .animate-out .title-left-to-right-animate { left: 200% }
+	.sequence-theme .title-right-to-left-animate {
+	    right: -100%;
+	    position: absolute;
+	    top: 20px;
+	    width: 100%;
+	}
+	.sequence-theme .animate-in .title-right-to-left-animate { right: 0% }
+	.sequence-theme .animate-out .title-right-to-left-animate { right: -100% }
+	.sequence-theme .left-img-from-bottom-out-to-left {
+	    left: 0%;
+	    width: 100%;
+	}
+	.sequence-theme .animate-in .left-img-from-bottom-out-to-left {
+	    left: 0%;
+	    top: 140px;
+	}
+	.sequence-theme .animate-out .left-img-from-bottom-out-to-left {
+	    left: -100%;
+	    top: 140px;
+	}
+	.sequence-theme .right-img-from-bottom-out-to-right {
+	    right: 0%;
+	    width: 100%;
+	}
+	.sequence-theme .animate-in .right-img-from-bottom-out-to-right {
+	    right: 0%;
+	    top: 140px;
+	}
+	.sequence-theme .animate-out .right-img-from-bottom-out-to-right {
+	    right: -100%;
+	    opacity: 0;
+	    top: 140px;
+	}
+	.sequence-theme .right-img-from-top-out-to-right {
+	    right: 0;
+	    width: 100%;
+	}
+	.sequence-theme .animate-in .right-img-from-top-out-to-right {
+	    right: 0;
+	    top: 140px;
+	}
+	.sequence-theme .title-from-top-animate {
+	    left: 0;
+	    width: 100%;
+	    text-align: center;
+	}
+	.sequence-theme .animate-in .title-from-top-animate {
+	    left: 0;
+	    top: 25px;
+	}
+	.sequence-theme .animate-out .title-from-top-animate { left: 0 }
+	/* IMAGE from bottom center */
+	.sequence-theme .img-from-bottom {
+	    left: 0;
+	    width: 100%;
+	}
+	.sequence-theme .animate-in .img-from-bottom {
+	    left: 0;
+	    bottom: 20px;
+	}
+	.sequence-theme .animate-out .img-from-bottom {
+	    left: 0;
+	    opacity: 0;
+	    bottom: -100px;
+	}
+}
+@media only screen and (max-width: 767px) { 
+	.sequence-theme .sequence-next,
+	.sequence-theme .sequence-prev {
+		width: 30px;
+ 	   height: 30px;
+ 	   font-size: 15px;
+ 	   line-height: 30px;
+	}
+	.sequence-theme .sequence-next i {
+    	left: 1;
+	}
+	.sequence-theme .sequence-prev i {
+ 	   left: 0;
+	}
+		
+}
+
+@media only screen and (max-width: 500px) { 
+	.sequence-theme .caption h2 { font-size: 150% }
+	.sequence-theme .caption h3 { font-size: 120% }
+	.slide-image img { max-height: 200px }
+}
+@media only screen and (max-width: 480px) { 
+	#sequence { height: 230px }
+	.slide-image img { max-height: 130px }
+	.sequence-theme .caption h2 { font-size: 145% }
+	.sequence-theme .caption h3 { font-size: 95% }
+	.sequence-theme .animate-in .left-img-from-bottom-out-to-left,
+	.sequence-theme .animate-out .left-img-from-bottom-out-to-left,
+	.sequence-theme .animate-in .right-img-from-bottom-out-to-right,
+	.sequence-theme .animate-out .right-img-from-bottom-out-to-right,
+	.sequence-theme .animate-in .right-img-from-top-out-to-right { top: 100px }
+}
+
+/* max height !!! */
+@media only screen and (max-height:321px) {
+
+	#sequence { height: 175px }
+	.slide-image img { max-height: 100px }
+	.sequence-theme .title-left-to-right-animate {
+	    top: 10px;
+	}
+
+	.sequence-theme .caption h2 { font-size: 120% }
+	.sequence-theme .caption h3 { font-size: 80% }
+	.sequence-theme .animate-in .left-img-from-bottom-out-to-left, 
+	.sequence-theme .animate-out .left-img-from-bottom-out-to-left, 
+	.sequence-theme .animate-in .right-img-from-bottom-out-to-right, 
+	.sequence-theme .animate-out .right-img-from-bottom-out-to-right, 
+	.sequence-theme .animate-in .right-img-from-top-out-to-right { top: 60px }
+
+
+}
+

@@ -1,0 +1,280 @@
+@font-face {
+  font-family: 'zocial';
+  src: url('../font/zocial.eot?94486700');
+  src: url('../font/zocial.eot?94486700#iefix') format('embedded-opentype'),
+       url('../font/zocial.woff?94486700') format('woff'),
+       url('../font/social.ttf?94486700') format('truetype'),
+       url('../font/zocial.svg?94486700#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+ .socicon,  .socicon:hover, .socicon a:hover {text-decoration:none!important;}
+
+ .socicon:before {
+  font-family: "zocial";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+     
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.duckduckgo.socicon:before { content: '\e800'; } /* '' */
+.aim.socicon:before { content: '\e801'; } /* '' */
+.delicious.socicon:before { content: '\e802'; } /* '' */
+.paypal.socicon:before { content: '\e803'; } /* '' */
+.flattr.socicon:before { content: '\e804'; } /* '' */
+.android.socicon:before { content: '\e805'; } /* '' */
+.eventful.socicon:before { content: '\e806'; } /* '' */
+.smashmag.socicon:before { content: '\e807'; } /* '' */
+.gplus-1.socicon:before { content: '\e808'; } /* '' */
+.wikipedia.socicon:before { content: '\e809'; } /* '' */
+.lanyrd.socicon:before { content: '\e80a'; } /* '' */
+.calendar.socicon:before { content: '\e80b'; } /* '' */
+.stumbleupon.socicon:before { content: '\e80c'; } /* '' */
+.fivehundredpx.socicon:before { content: '\e80d'; } /* '' */
+.pinterest.socicon:before { content: '\e80e'; } /* '' */
+.bitcoin.socicon:before { content: '\e80f'; } /* '' */
+.w3c.socicon:before { content: '\e810'; } /* '' */
+.foursquare.socicon:before { content: '\e811'; } /* '' */
+.html5.socicon:before { content: '\e812'; } /* '' */
+.ie.socicon:before { content: '\e813'; } /* '' */
+.call.socicon:before { content: '\e814'; } /* '' */
+.grooveshark.socicon:before { content: '\e815'; } /* '' */
+.ninetyninedesigns.socicon:before { content: '\e816'; } /* '' */
+.forrst.socicon:before { content: '\e817'; } /* '' */
+.digg.socicon:before { content: '\e818'; } /* '' */
+.spotify.socicon:before { content: '\e819'; } /* '' */
+.reddit.socicon:before { content: '\e81a'; } /* '' */
+.guest.socicon:before { content: '\e81b'; } /* '' */
+.gowalla.socicon:before { content: '\e81c'; } /* '' */
+.appstore.socicon:before { content: '\e81d'; } /* '' */
+.blogger.socicon:before { content: '\e81e'; } /* '' */
+.cc.socicon:before { content: '\e81f'; } /* '' */
+.dribbble.socicon:before { content: '\e820'; } /* '' */
+.evernote.socicon:before { content: '\e821'; } /* '' */
+.flickr.socicon:before { content: '\e822'; } /* '' */
+.google.socicon:before { content: '\e823'; } /* '' */
+.viadeo.socicon:before { content: '\e824'; } /* '' */
+.instapaper.socicon:before { content: '\e825'; } /* '' */
+.weibo.socicon:before { content: '\e826'; } /* '' */
+.klout.socicon:before { content: '\e827'; } /* '' */
+.linkedin-2.socicon:before { content: '\e828'; } /* '' */
+
+
+.linkedin.socicon:before { content: '\e828'; } /* '' */
+
+.meetup.socicon:before { content: '\e829'; } /* '' */
+.vk.socicon:before { content: '\e82a'; } /* '' */
+.plancast.socicon:before { content: '\e82b'; } /* '' */
+.disqus.socicon:before { content: '\e82c'; } /* '' */
+.rss.socicon:before { content: '\e82d'; } /* '' */
+.skype.socicon:before { content: '\e82e'; } /* '' */
+.twitter.socicon:before { content: '\e82f'; } /* '' */
+
+.twitterbird.socicon:before { content: '\e82f'; } /* '' */
+
+.youtube.socicon:before { content: '\e830'; } /* '' */
+.vimeo.socicon:before { content: '\e831'; } /* '' */
+.windows.socicon:before { content: '\e832'; } /* '' */
+.xing.socicon:before { content: '\e833'; } /* '' */
+.yahoo.socicon:before { content: '\e834'; } /* '' */
+.chrome.socicon:before { content: '\e835'; } /* '' */
+.email.socicon:before { content: '\e836'; } /* '' */
+.macstore.socicon:before { content: '\e837'; } /* '' */
+.myspace.socicon:before { content: '\e838'; } /* '' */
+.podcast.socicon:before { content: '\e839'; } /* '' */
+.amazon.socicon:before { content: '\e83a'; } /* '' */
+.steam.socicon:before { content: '\e83b'; } /* '' */
+.cloudapp.socicon:before { content: '\e83c'; } /* '' */
+.dropbox.socicon:before { content: '\e83d'; } /* '' */
+.ebay.socicon:before { content: '\e83e'; } /* '' */
+.facebook.socicon:before { content: '\e83f'; } /* '' */
+.github.socicon:before { content: '\e840'; } /* '' */
+.googleplay.socicon:before { content: '\e842'; } /* '' */
+.itunes.socicon:before { content: '\e843'; } /* '' */
+.plurk.socicon:before { content: '\e844'; } /* '' */
+.songkick.socicon:before { content: '\e845'; } /* '' */
+.lastfm.socicon:before { content: '\e846'; } /* '' */
+.gmail.socicon:before { content: '\e847'; } /* '' */
+.pinboard.socicon:before { content: '\e848'; } /* '' */
+.openid.socicon:before { content: '\e849'; } /* '' */
+.quora.socicon:before { content: '\e84a'; } /* '' */
+.soundcloud.socicon:before { content: '\e84b'; } /* '' */
+.tumblr.socicon:before { content: '\e84c'; } /* '' */
+.eventasaurus.socicon:before { content: '\e84d'; } /* '' */
+.wordpress.socicon:before { content: '\e84e'; } /* '' */
+.yelp.socicon:before { content: '\e84f'; } /* '' */
+.intensedebate.socicon:before { content: '\e850'; } /* '' */
+.eventbrite.socicon:before { content: '\e851'; } /* '' */
+.scribd.socicon:before { content: '\e852'; } /* '' */
+.posterous.socicon:before { content: '\e853'; } /* '' */
+.stripe.socicon:before { content: '\e854'; } /* '' */
+.opentable.socicon:before { content: '\e855'; } /* '' */
+.cart.socicon:before { content: '\e856'; } /* '' */
+.printicon.socicon:before { content: '\e857'; } /* '' */
+.angellist.socicon:before { content: '\e858'; } /* '' */
+.instagram.socicon:before { content: '\e859'; } /* '' */
+.dwolla.socicon:before { content: '\e85a'; } /* '' */
+.appnet.socicon:before { content: '\e85b'; } /* '' */
+.statusnet.socicon:before { content: '\e85c'; } /* '' */
+.acrobat.socicon:before { content: '\e85d'; } /* '' */
+.drupal.socicon:before { content: '\e85e'; } /* '' */
+.buffer.socicon:before { content: '\e85f'; } /* '' */
+.pocket.socicon:before { content: '\e860'; } /* '' */
+.github-circled.socicon:before { content: '\e841'; } /* '' */
+.bitbucket.socicon:before { content: '\e861'; } /* '' */
+.lego.socicon:before { content: '\e862'; } /* '' */
+.login.socicon:before { content: '\e863'; } /* '' */
+.stackoverflow.socicon:before { content: '\e864'; } /* '' */
+.hackernews.socicon:before { content: '\e865'; } /* '' */
+.lkdto.socicon:before { content: '\e866'; } /* '' */
+
+/* IE 7 */
+
+.lt-ie8 .socicon {
+  font-family: 'zocial';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1em;
+  display:inline;
+  zoom:1;
+  margin-left: .2em;
+  font-size:14px;
+ }
+
+
+.lt-ie8 .duckduckgo.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe800;&nbsp;'); }
+.lt-ie8 .aim.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe801;&nbsp;'); }
+.lt-ie8 .delicious.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe802;&nbsp;'); }
+.lt-ie8 .paypal.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe803;&nbsp;'); }
+.lt-ie8 .flattr.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe804;&nbsp;'); }
+.lt-ie8 .android.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe805;&nbsp;'); }
+.lt-ie8 .eventful.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe806;&nbsp;'); }
+.lt-ie8 .smashmag.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe807;&nbsp;'); }
+.lt-ie8 .gplus-1.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe808;&nbsp;'); }
+.lt-ie8 .wikipedia.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe809;&nbsp;'); }
+.lt-ie8 .lanyrd.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe80a;&nbsp;'); }
+.lt-ie8 .calendar.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe80b;&nbsp;'); }
+.lt-ie8 .stumbleupon.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe80c;&nbsp;'); }
+.lt-ie8 .fivehundredpx.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe80d;&nbsp;'); }
+.lt-ie8 .pinterest.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe80e;&nbsp;'); }
+.lt-ie8 .bitcoin.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe80f;&nbsp;'); }
+.lt-ie8 .w3c.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe810;&nbsp;'); }
+.lt-ie8 .foursquare.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe811;&nbsp;'); }
+.lt-ie8 .html5.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe812;&nbsp;'); }
+.lt-ie8 .ie.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe813;&nbsp;'); }
+.lt-ie8 .call.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe814;&nbsp;'); }
+.lt-ie8 .grooveshark.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe815;&nbsp;'); }
+.lt-ie8 .ninetyninedesigns.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe816;&nbsp;'); }
+.lt-ie8 .forrst.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe817;&nbsp;'); }
+.lt-ie8 .digg.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe818;&nbsp;'); }
+.lt-ie8 .spotify.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe819;&nbsp;'); }
+.lt-ie8 .reddit.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe81a;&nbsp;'); }
+.lt-ie8 .guest.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe81b;&nbsp;'); }
+.lt-ie8 .gowalla.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe81c;&nbsp;'); }
+.lt-ie8 .appstore.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe81d;&nbsp;'); }
+.lt-ie8 .blogger.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe81e;&nbsp;'); }
+.lt-ie8 .cc.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe81f;&nbsp;'); }
+.lt-ie8 .dribbble.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe820;&nbsp;'); }
+.lt-ie8 .evernote.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe821;&nbsp;'); }
+.lt-ie8 .flickr.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe822;&nbsp;'); }
+.lt-ie8 .google.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe823;&nbsp;'); }
+.lt-ie8 .viadeo.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe824;&nbsp;'); }
+.lt-ie8 .instapaper.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe825;&nbsp;'); }
+.lt-ie8 .weibo.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe826;&nbsp;'); }
+.lt-ie8 .klout.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe827;&nbsp;'); }
+.lt-ie8 .linkedin-2.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe828;&nbsp;'); }
+.lt-ie8 .linkedin.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe828;&nbsp;'); }
+.lt-ie8 .meetup.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe829;&nbsp;'); }
+.lt-ie8 .vk.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe82a;&nbsp;'); }
+.lt-ie8 .plancast.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe82b;&nbsp;'); }
+.lt-ie8 .disqus.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe82c;&nbsp;'); }
+.lt-ie8 .rss.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe82d;&nbsp;'); }
+.lt-ie8 .skype.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe82e;&nbsp;'); }
+.lt-ie8 .twitter.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe82f;&nbsp;'); }
+.lt-ie8 .twitterbird.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe82f;&nbsp;'); }
+.lt-ie8 .youtube.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe830;&nbsp;'); }
+.lt-ie8 .vimeo.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe831;&nbsp;'); }
+.lt-ie8 .windows.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe832;&nbsp;'); }
+.lt-ie8 .xing.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe833;&nbsp;'); }
+.lt-ie8 .yahoo.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe834;&nbsp;'); }
+.lt-ie8 .chrome.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe835;&nbsp;'); }
+.lt-ie8 .email.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe836;&nbsp;'); }
+.lt-ie8 .macstore.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe837;&nbsp;'); }
+.lt-ie8 .myspace.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe838;&nbsp;'); }
+.lt-ie8 .podcast.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe839;&nbsp;'); }
+.lt-ie8 .amazon.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe83a;&nbsp;'); }
+.lt-ie8 .steam.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe83b;&nbsp;'); }
+.lt-ie8 .cloudapp.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe83c;&nbsp;'); }
+.lt-ie8 .dropbox.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe83d;&nbsp;'); }
+.lt-ie8 .ebay.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe83e;&nbsp;'); }
+.lt-ie8 .facebook.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe83f;&nbsp;'); }
+.lt-ie8 .github.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe840;&nbsp;'); }
+.lt-ie8 .googleplay.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe842;&nbsp;'); }
+.lt-ie8 .itunes.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe843;&nbsp;'); }
+.lt-ie8 .plurk.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe844;&nbsp;'); }
+.lt-ie8 .songkick.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe845;&nbsp;'); }
+.lt-ie8 .lastfm.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe846;&nbsp;'); }
+.lt-ie8 .gmail.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe847;&nbsp;'); }
+.lt-ie8 .pinboard.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe848;&nbsp;'); }
+.lt-ie8 .openid.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe849;&nbsp;'); }
+.lt-ie8 .quora.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe84a;&nbsp;'); }
+.lt-ie8 .soundcloud.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe84b;&nbsp;'); }
+.lt-ie8 .tumblr.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe84c;&nbsp;'); }
+.lt-ie8 .eventasaurus.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe84d;&nbsp;'); }
+.lt-ie8 .wordpress.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe84e;&nbsp;'); }
+.lt-ie8 .yelp.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe84f;&nbsp;'); }
+.lt-ie8 .intensedebate.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe850;&nbsp;'); }
+.lt-ie8 .eventbrite.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe851;&nbsp;'); }
+.lt-ie8 .scribd.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe852;&nbsp;'); }
+.lt-ie8 .posterous.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe853;&nbsp;'); }
+.lt-ie8 .stripe.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe854;&nbsp;'); }
+.lt-ie8 .opentable.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe855;&nbsp;'); }
+.lt-ie8 .cart.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe856;&nbsp;'); }
+.lt-ie8 .printicon.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe857;&nbsp;'); }
+.lt-ie8 .angellist.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe858;&nbsp;'); }
+.lt-ie8 .instagram.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe859;&nbsp;'); }
+.lt-ie8 .dwolla.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe85a;&nbsp;'); }
+.lt-ie8 .appnet.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe85b;&nbsp;'); }
+.lt-ie8 .statusnet.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe85c;&nbsp;'); }
+.lt-ie8 .acrobat.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe85d;&nbsp;'); }
+.lt-ie8 .drupal.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe85e;&nbsp;'); }
+.lt-ie8 .buffer.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe85f;&nbsp;'); }
+.lt-ie8 .pocket.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe860;&nbsp;'); }
+.lt-ie8 .github-circled.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe841;&nbsp;'); }
+.lt-ie8 .bitbucket.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe861;&nbsp;'); }
+.lt-ie8 .lego.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe862;&nbsp;'); }
+.lt-ie8 .login.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe863;&nbsp;'); }
+.lt-ie8 .stackoverflow.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe864;&nbsp;'); }
+.lt-ie8 .hackernews.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe865;&nbsp;'); }
+.lt-ie8 .lkdto.socicon { zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe866;&nbsp;'); }
+
+
+/* DEMO ONLY */
+.demo-social-icon-only .i-code {display:none;}
+.demo-social-icon-only .span3 {line-height:2.5;}
+.demo-social-icon-only .span3 i {font-size:18px;margin-right:20px;}
