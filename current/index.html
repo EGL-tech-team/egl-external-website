@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!--><html class="no-js" lang="en" dir="ltr"><!--<![endif]-->
 
 <head>
-<title>Variable Width Lemmon Slider | V2 - Crisp Responsive Retina Ready Portfolio Business</title>
+<title>SequenceJS slider | V2 - Crisp Responsive Retina Ready Portfolio Business</title>
 
 <!-- Meta Data ================ -->
 <meta charset="UTF-8" />
@@ -18,8 +18,8 @@
 <link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
 <link rel="stylesheet" href="assets/css/header-1.css" type="text/css"/>
 
-<!-- lemmon slider variable width slider for images -->
-<link rel="stylesheet" href="assets/css/lemmon-slider.css" type="text/css" media="screen" />
+<!-- sequence slider -->
+<link rel="stylesheet" href="assets/css/sequence-slider.css" type="text/css" media="screen" />
 
 <!-- Icons ================ -->
 <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
@@ -62,6 +62,10 @@ with yours and get your fb:admis content information where the XXXX goes.
 <!-- Add to Head after Style sheet http://modernizr.com/docs/#installing  ================ -->
 <script src="assets/js/modernizr.js"></script><!-- js multiple backgrounds svg background size -->
 
+		<!--SEQUENCE slider AND loading yes it's in the head on the page itself -->
+		<script src='assets/js/sequence.min.js'></script>
+
+
 </head>
 <body class="index">
 
@@ -77,6 +81,10 @@ with yours and get your fb:admis content information where the XXXX goes.
 <!--end mobile navigation trigger-->
 
 <section class="container preheader"> 
+	
+	<!--this is the login for the user-->
+	<nav class="user clearfix"> <a href="login.html"><i class="icon-user"></i> Login</a> </nav>
+	<!--close user nav-->
 	
 	<div class="search-wrapper">
 		<form class="search" method="post" action="someaction.php">
@@ -102,7 +110,7 @@ with yours and get your fb:admis content information where the XXXX goes.
 		<!-- begin #main_menu -->
 		<nav id="main_menu">
 			<ul class="primary_menu">
-				<li class="active"><a href="index.html">Home</a></li>
+				<li><a href="index.html">Home</a></li>
 				<li class="parent"><a href="javascript:void(0)">Goodies<i></i></a>
 					<ul>
 						<li><a href="tall-logo.html">Tall Logo Header</a></li>
@@ -139,16 +147,16 @@ with yours and get your fb:admis content information where the XXXX goes.
 						<li><a href="blog-single-image-slider.html">Image Slider Post</a></li>
 					</ul>
 				</li>
-				<li class="parent"><a href="javascript:void(0)">Pages<i></i></a>
+				<li class="parent active"><a href="javascript:void(0)">Pages<i></i></a>
 					<ul>
-						<li class="parent"><a href="javascript:void(0)">Home Pages<i></i></a>
+						<li class="parent active"><a href="javascript:void(0)">Home Pages<i></i></a>
 							<ul>
 								<li><a href="index.html">Lemmon Slider</a></li>
 								<li><a href="index-flex-light.html">FlexSlider Light</a></li>
 								<li><a href="index-flex-dark.html">FlexSlider Dark</a></li>
 								<li><a href="index-flex-boxed.html">FlexSlider Boxed</a></li>
 								<li><a href="index-masonry.html">Masonry Isotope</a></li>
-								<li><a href="sequence-slider.html">Sequence Slider</a></li>
+								<li class="active"><a href="sequence-slider.html">Sequence Slider</a></li>
 								<li><a href="home-layout-idea.html">Home Layout Idea</a></li>
 							</ul>
 						</li>
@@ -188,70 +196,74 @@ with yours and get your fb:admis content information where the XXXX goes.
 			<!--note the home class on the h1 tag-->
 			<h1>Engineering Global Leadership Honors Program</h1>
 		</div>
+		
 		<!--close container--> 
 	</div>
 	<!--close hero-unit--> 
+<div id="page">
 	
 	<!--begin slider -->
-	<div class="lemmon-wrap clearfix">
-		<div id="lemmon-slider" class="lemmon-slider">
-			<ul>
-				<li> <a href="portfolio-single.html"> 
-					<!--link to article/post/portfolio entry for the entire image--> 
-					<img src="../demo/lemmon-slider/Byzantinischer_Mosaizist_um_1122_001.png" alt="" /> </a> 
-					<!--end image link-->
-					<div class="summary"> 
-						<!--begin summary--> 
-						<a href="portfolio-single.html"> 
-						<!--begin link to article post or portfolio entry for the caption-->
-						<h3>Byzantinischer Mosaizist</h3>
-						<p>Categories</p>
-						</a> 
-						<!--end link to article post or portfolio entry for the caption--> 
-					</div>
-					<!--end summary--> 
-				</li>
-				<li> <a href="portfolio-single.html"> <img src="../demo/lemmon-slider/Edouard_Manet_010.png" alt="" /></a>
-					<div class="summary"> <a href="portfolio-single.html">
-						<h3>Manet</h3>
-						<p>Categories</p>
-						</a> </div>
-				</li>
-				<li> <a href="portfolio-single.html"> <img src="../demo/lemmon-slider/Maler_der_Grabkammer_der_Nefertari_001.png" alt="" /></a>
-					<div class="summary"> <a href="portfolio-single.html">
-						<h3>Nefertari</h3>
-						<p>Categories</p>
-						</a> </div>
-				</li>
-				<li> <a href="portfolio-single.html"> <img src="../demo/lemmon-slider/Mona_Lisa_by_Leonardo_da_Vinci_042.png" alt="" /></a>
-					<div class="summary"> <a href="portfolio-single.html">
-						<h3>Mona Lisa</h3>
-						<p>Art</p>
-						</a> </div>
-				</li>
-				<li> <a href="portfolio-single.html"> <img src="../demo/lemmon-slider/Sandro_Botticelli_046.png" alt="" /></a>
-					<div class="summary"> <a href="portfolio-single.html">
-						<h3>Amplify</h3>
-						<p>Photography</p>
-						</a> </div>
-				</li>
-				<li> <a href="portfolio-single.html"> <img src="../demo/lemmon-slider/Sandro_Botticelli_077.png" alt="" /></a>
-					<div class="summary"> <a href="portfolio-single.html">
-						<h3>Botticelli</h3>
-						<p>Photography</p>
-						</a> </div>
-				</li>
-				<li> <a href="portfolio-single.html"> <img src="../demo/lemmon-slider/Vincent_Willem_van_Gogh_101.png" alt="" /></a>
-					<div class="summary"> <a href="portfolio-single.html">
-						<h3>Vincent</h3>
-						<p>Categories</p>
-						</a> </div>
-				</li>
+	
+<div class="sequence-theme">
+		<div id="sequence">
+				<ul class="sequence-canvas">
+						<li class="animate-in slide1">
+								<div class="title-left-to-right-animate caption">
+										<h2>Crisp and Clean. </h2>
+										<h3>A very popular Boostrap Theme.</h3>
+								</div>
+								<div class="right-img-from-bottom-out-to-right slide-image">
+										<img src="../demo/responsive-showcase.png" alt="" />
+								</div>
+								<div class="bgimg">
+								</div>
+						</li>
+
+						<li class="slide2">
+								<div class="left-img-from-bottom-out-to-left slide-image">
+										<img src="assets/sequence/imac.png" alt="" />
+								</div>
+								<div class="title-right-to-left-animate caption">
+										<h2>This is Built Using Sequence.js</h2>
+								</div>
+								<div class="bgimg">
+								</div>
+						</li>
+
+						<li class="slide3">
+								<div class="title-left-to-right-animate caption">
+										<h2>Simple animations with CSS3 but without a bunch of keyframes.</h2>
+								</div>
+								<div class="right-img-from-top-out-to-right slide-image">
+										<img src="assets/sequence/iphone.png" alt="" />
+								</div>
+								<div class="bgimg">
+								</div>
+						</li>
+
+						<li class="slide4">
+								<div class="title-from-top-animate caption">
+										<h2>Centered slides look really sharp</h2>
+								</div>
+								<div class="img-from-bottom slide-image">
+										<img src="assets/sequence/ipad.png" alt="" />
+								</div>
+								<div class="bgimg">
+								</div>
+						</li>
+				</ul><!-- close #sequence ul -->
+		</div><!-- close #sequence -->
+
+				<a class="sequence-prev"><i class='icon-angle-left'></i></a>
+				<a class="sequence-next"><i class='icon-angle-right'></i></a>
+
+</div><!-- close .sequence-theme -->
+			<ul class="sequence-pagination">
+				<li><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
 			</ul>
-		</div>
-		<div class="controls"> <a href="#" class="prev-page">Prev Page</a> <a href="#" class="next-page">Next Page</a> </div>
-		<!-- / .controls --> 
-	</div>
 	<!-- / end slider --> 
 	
 	<!--notice how sliders are outside the this main content div-->
@@ -262,10 +274,10 @@ this done so smaller devices will NOT see the less important information first -
 			
 			<div class="span4">
 				<div class="well">
-					<h2>The Time Is Nigh</h2>
+					<h2>Apply Now</h2>
 					<h3>Make Your Move</h3>
 					<p> <img class="alignleft" src="../demo/80x80-Diego_Velazquez_028.png" alt="Velazquez" /> Public domain image. Makes you want to click something, right? Whatever course you decide upon, there is always someone to tell you that you are wrong. But you won't be wrong in this case. </p>
-					<p class="right"><a href="#" class="btn-primary btn">Apply Now &nbsp;<i class="icon-circle-arrow-right icon-white"></i></a></p>
+					<p class="right"><a href="#" class="btn-primary btn">Go for it &nbsp;<i class="icon-circle-arrow-right icon-white"></i></a></p>
 				</div>
 				<!--close .well --> 
 			</div>
@@ -318,28 +330,37 @@ this done so smaller devices will NOT see the less important information first -
 		</div>
 		<!-- end row-fluid-->
 		
-		<h3 class="short_headline"><span>Profound Headline</span></h3>
-		<p> Crisp has revolutionized the conceptualization of structuring. We will actualize the standard industry commonly-used jargon-based term "24/7". What does the term "integrated" really mean? Without reporting, you will lack eyeballs. We will amplify our power to benchmark without decreasing our capacity to mesh. We will reinvent the buzzword "frictionless". </p>
-		<!-- begin equalHeights columns 3 -->
-		<div class="row-fluid equalHero equalHeights">
-			<div class="span4"> <a href="about.html"><img src="../demo/fc-Sandro_Botticelli_077.png" class="aligncenter" alt="" /></a>
-				<h3><a href="about.html">Crisp is the industry leader of real world iteration.</a></h3>
-				<p>Public domain images. We will increase our aptitude to evolve without decrementing our capacity to leverage. It may seem marvelous, but it&#039;s true!</p>
-				<p class="right"><a href="about.html" class="btn btn-primary">Details &rarr;</a></p>
+		<h3 class="short_headline"><span>Global Leaders in Engineering and Business</span></h3>
+		<p> The Engineering Global Leadership (EGL) specialization is a unique opportunity for students interested in integrating engineering into a global business environment. EGL students continue at U-M beyond the College of Engineering Honors Program to earn a Masters in an engineering discipline. </p>
+		<p> EGL prepares students to communicate across engineering and business boundaries, thereby breaking down the barriers to global competitiveness. The focus on Global Operations/Business enhances students’ understanding of operations and the corporate environment, including the basics of marketing, accounting, strategy and finance. </p>
+		<p>	The program includes an International Minor for Engineers that exposes students to the language, history and customs of another part of the world. Emphasis is placed on the idea that integration of these disciplines is vital to success in today’s global business environment. </p>
+		<p> Students admitted to the College of Engineering Honors Program who choose a Global Business/Operations focus are eligible to apply for EGL. </p>
+		
+			<!--close row-fluid-->
+		<div class="row-fluid center">
+			<div class="span3"> <a class="biggieicon" href="#"><i class="icon-paper-clip"></i></a>
+				<h4 class="border-b">Engineering Excellence</h4>
+				<p class="bumpdown">We here at Crisp have proven we know that it is better to e-enable extensibly than to architect seamlessly. If all of this may seem wonderful to you, that's because it is! Our functionality is unparalleled in the industry.</p>
+				<p class="center"><a href="#" class="btn btn-small btn-very-subtle">More &rarr;</a></p>
 			</div>
-			<!-- close .span4 -->
-			<div class="span4"> <a href="about.html"><img src="../demo/fc-Sandro_Botticelli_046.png" class="aligncenter" alt="" /></a>
-				<h3><a href="about.html">It is better to maximize virally than to exploit holistically.</a></h3>
-				<p>If all of this seems stunning to you, that&#039;s because it is! The capability to strategize extensibly leads to the aptitude to upgrade compellingly.</p>
-				<p class="right"><a href="about.html" class="btn btn-primary">Details &rarr;</a></p>
+			<div class="span3"> <a class="biggieicon" href="#"><i class="icon-wrench"></i></a>
+				<h4 class="border-b">Global Education</h4>
+				<p class="bumpdown">We have proven we know that it is better to disintermediate intuitively than to expedite virally. The dot-com, mission-critical structuring factor can be summed up in one word: compelling.</p>
+				<p class="center"><a href="#" class="btn btn-small btn-very-subtle">More &rarr;</a></p>
 			</div>
-			<!-- close .span4-->
-			<div class="span4"> <a href="about.html"><img src="../demo/fc-Sandro_Botticelli_058.png" class="aligncenter" alt="" /></a>
-				<h3><a href="about.html">What do we incubate? Anything and everything, regardless of anonymity!</a></h3>
-				<p>A company that can implement correctly will (eventually) be able to architect correctly. If you generate intuitively, you may have to synergize robustly.</p>
-				<p class="right"><a href="about.html" class="btn btn-primary">Details &rarr;</a></p>
+			<div class="span3"> <a class="biggieicon" href="#"><i class="icon-refresh"></i></a>
+				<h4 class="border-b">Business Accumen</h4>
+				<p class="bumpdown">The accounting factor is short-term. Our functionality is unmatched, but our transparent models and user-proof configuration is constantly considered a remarkable achievement.</p>
+				<p class="center"><a href="#" class="btn btn-small btn-very-subtle">More &rarr;</a></p>
 			</div>
-			<!-- close .span4 --> 
+			<div class="span3"> <a class="biggieicon" href="#"><i class="icon-comments-alt"></i></a>
+				<h4 class="border-b">Leadership Experience </h4>
+				<p class="bumpdown">Think intra-client-focused. Think viral. Think resource-constrained. Think user-centric. But don't think all three at the same time. The ability to redefine extensibly leads to the ability to incentivize iteravely.</p>
+				<p class="center"><a href="#" class="btn btn-small btn-very-subtle">More &rarr;</a></p>
+			</div>
+		</div>
+		<!--close row-fluid -->
+		
 		</div>
 		<!-- close #equalHeights .featured 3 columns --> 
 		
@@ -454,10 +475,6 @@ this done so smaller devices will NOT see the less important information first -
 
 <!-- JS JQuery ================ --> 
 <script src="assets/js/bootstrap.min.js"></script>
-
-
-<script src="assets/js/lemmon-slider.min.js"></script><!-- lemmon slider js --> 
-
 <!--initialize scripts / custom scripts all pages--> 
 <script src="assets/js/custom.js"></script>
 </body>
