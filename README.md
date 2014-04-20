@@ -16,16 +16,16 @@ Deployment
 ------------
 While testing can be done locally. Some features, such as server side includes, require deployment to a personal webspace.
 
-The deploy.sh script allows for quick testing of changes on a user personal webspace. 
+Proper webspace permissions must be setup prior to using the script. Instructions can be found here:
+
+http://www.umich.edu/~umweb/how-to/homepage.html
+
+The deploy.sh script allows for quick testing of changes on a user personal webspace.
 
 The script deploys to:
 
 http://www-personal.umich.edu/~{unique_name}/{folder_name}/
 
 Both the {unique_name} and {folder_name} are prompted for after running the script.
-
-Proper webspace permissions must be setup prior to using the script. Instructions can be found here:
-
-http://www.umich.edu/~umweb/how-to/homepage.html
 
 In the future, a script should be written for deployment of the final website. Deployment scripts ensure that each rollout of the website is exactly the same and serve as documentation for how the website should be deployed. Ideally, no manual intervention will be required other than starting the deployment script.
